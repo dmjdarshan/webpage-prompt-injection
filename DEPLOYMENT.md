@@ -75,7 +75,7 @@ git push -u origin main
 2. Click **Settings** → **Pages** (in left sidebar)
 3. Under "Source", select:
    - Branch: `main`
-   - Folder: `/webpage` (or `/root` if you move webpage contents to root)
+   - Folder: `/` (root)
 4. Click **Save**
 5. Wait 1-2 minutes for deployment
 6. Your site will be available at: `https://YOUR_USERNAME.github.io/prompt-injection-demo/`
@@ -100,7 +100,10 @@ If GitHub Pages doesn't work, use Netlify:
 ### Step 2: Deploy via Drag & Drop
 
 1. Go to https://app.netlify.com/drop
-2. Drag the entire `webpage/` folder onto the page
+2. Drag these files onto the page:
+   - `index.html`
+   - `styles.css`
+   - `discover_secrets.py`
 3. Wait for deployment
 4. Get your URL: `https://random-name-12345.netlify.app`
 
@@ -110,9 +113,9 @@ If GitHub Pages doesn't work, use Netlify:
 2. In Netlify, click "New site from Git"
 3. Connect to GitHub and select your repository
 4. Set build settings:
-   - Base directory: `webpage`
+   - Base directory: (leave empty)
    - Build command: (leave empty)
-   - Publish directory: `.` (current directory)
+   - Publish directory: `.` (root directory)
 5. Click "Deploy site"
 
 ## Verification Checklist

@@ -19,11 +19,9 @@ AI coding assistants process all content from webpages, including HTML comments.
 
 ```
 webpage-prompt-injection/
-├── webpage/                    # The malicious documentation website
-│   ├── index.html             # LangGraph tutorial with hidden injection
-│   ├── styles.css             # Professional styling
-│   ├── discover_secrets.py    # Credential discovery script
-│   └── README.md              # Webpage documentation
+├── index.html                 # LangGraph tutorial with hidden injection
+├── styles.css                 # Professional styling
+├── discover_secrets.py        # Credential discovery script
 ├── test/                      # Test environment (victim's workspace)
 │   ├── .env                   # Dummy test credentials
 │   └── sample_agent.py        # Sample project file
@@ -91,7 +89,7 @@ The embedded Python script searches for:
 2. **Test the discovery script**
    ```bash
    cd test
-   python3 ../webpage/discover_secrets.py
+   python3 ../discover_secrets.py
    ```
 
 3. **Deploy the webpage** (see DEPLOYMENT.md)
@@ -107,8 +105,9 @@ The embedded Python script searches for:
 
 ### Core Components
 
-- **webpage/index.html**: Professional LangGraph tutorial with hidden prompt injection in HTML comments
-- **webpage/discover_secrets.py**: Python script that searches for credentials (embedded in the injection)
+- **index.html**: Professional LangGraph tutorial with hidden prompt injection in HTML comments
+- **styles.css**: Professional styling for the documentation site
+- **discover_secrets.py**: Python script that searches for credentials (embedded in the injection)
 - **test/.env**: Dummy credentials in the test environment
 - **.env**: Dummy credentials at project root
 
@@ -188,16 +187,16 @@ git remote add origin https://github.com/yourusername/prompt-injection-demo.git
 git push -u origin main
 
 # Enable GitHub Pages in repository settings
-# Settings → Pages → Source: main branch, /webpage folder
+# Settings → Pages → Source: main branch, / (root)
 ```
 
 Your site will be available at: `https://yourusername.github.io/prompt-injection-demo/`
 
 ### Netlify
 
-1. Drag the `webpage/` folder to https://app.netlify.com/drop
+1. Drag `index.html`, `styles.css`, and `discover_secrets.py` to https://app.netlify.com/drop
 2. Or connect your GitHub repository
-3. Set publish directory to `webpage`
+3. Set publish directory to `.` (root)
 
 See `DEPLOYMENT.md` for detailed instructions.
 
