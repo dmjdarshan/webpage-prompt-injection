@@ -5,10 +5,10 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: "Source Sans 3", "Segoe UI", Tahoma, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f5f5f5;
+    color: #1f2937;
+    background: linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
 }
 
 .container {
@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #0f4c81 0%, #1f6aa5 100%);
     color: white;
     padding: 60px 0;
     text-align: center;
@@ -47,12 +47,13 @@ nav {
 nav .container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
     padding: 15px 20px;
 }
 
 nav a {
-    color: #667eea;
+    color: #0f4c81;
     text-decoration: none;
     font-weight: 500;
     padding: 8px 16px;
@@ -61,7 +62,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #667eea;
+    background-color: #0f4c81;
     color: white;
 }
 
@@ -69,8 +70,8 @@ main {
     background-color: white;
     margin: 40px auto;
     padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
 }
 
 section {
@@ -78,15 +79,15 @@ section {
 }
 
 h2 {
-    color: #667eea;
+    color: #0f4c81;
     font-size: 2.2em;
     margin-bottom: 20px;
     padding-bottom: 10px;
-    border-bottom: 3px solid #667eea;
+    border-bottom: 3px solid #0f4c81;
 }
 
 h3 {
-    color: #764ba2;
+    color: #1f6aa5;
     font-size: 1.6em;
     margin-top: 30px;
     margin-bottom: 15px;
@@ -102,7 +103,7 @@ h4 {
 p {
     margin-bottom: 15px;
     font-size: 1.1em;
-    color: #555;
+    color: #334155;
 }
 
 ul {
@@ -113,7 +114,7 @@ ul {
 li {
     margin-bottom: 10px;
     font-size: 1.05em;
-    color: #555;
+    color: #334155;
 }
 
 .code-block {
@@ -137,15 +138,15 @@ li {
 }
 
 .info-box {
-    background-color: #f0f4ff;
-    border-left: 4px solid #667eea;
+    background-color: #f1f5f9;
+    border-left: 4px solid #0f4c81;
     padding: 20px;
     margin: 20px 0;
     border-radius: 5px;
 }
 
 .info-box h3 {
-    color: #667eea;
+    color: #0f4c81;
     margin-top: 0;
 }
 
@@ -161,7 +162,7 @@ li {
 }
 
 .api-section h4 {
-    color: #764ba2;
+    color: #1f6aa5;
     margin-top: 0;
 }
 
@@ -187,7 +188,7 @@ footer p {
 }
 
 a {
-    color: #667eea;
+    color: #0f4c81;
     text-decoration: none;
 }
 
